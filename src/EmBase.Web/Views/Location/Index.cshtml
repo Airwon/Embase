@@ -1,0 +1,53 @@
+﻿@model List<EmBase.Web.Models.LocationWithCityController>
+@{
+    ViewBag.Title = "Location";
+}
+
+<h2>Miejsca</h2>
+<section id="control">
+  <p>
+    <a href="/Locations/Add" class="btn btn-default">
+      Dodaj Miejsce
+      <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+    </a>
+  </p>
+
+</section>
+
+<section id="data">
+  <table class="table">
+    <tr>
+      <th>Miasto</th>
+      <th>Ulica</th>
+      <th>Piętro</th>
+      <th>Nr Pomieszczenia</th>
+      <th></th>
+      <th></th>
+    </tr>
+    @foreach (var localization in Model)
+      {
+        <tr>
+
+          <td>
+            @localization.City
+          </td>
+          <td>
+            @localization.Street
+          </td>
+          <td class="center">
+            @localization.Floor
+          </td>
+          <td class="center">
+            @localization.Room
+          </td>
+          <td>
+            <a href="/Locations/Edit?symbol=@localization.Id_Locations" class="btn btn-default">
+              Edycja Lokalizacje
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </a>
+          </td>
+        </tr>
+    }
+  </table>
+</section>
+

@@ -1,0 +1,57 @@
+﻿@model List<EmBase.Web.Models.ProviderControler>
+@{
+    ViewBag.Title = "Sprzedawca";
+}
+
+<h2>Sprzedawcy</h2>
+
+<section id="control">
+  <p>
+    <a href="/Provider/Add" class="btn btn-default">
+      Dodaj Sprzedawcę
+      <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+    </a>
+  </p>
+
+</section>
+
+<section id="data">
+  <table class="table">
+    <tr>
+      <th>Nazwa firmy</th>
+      <th>Miasto</th>
+      <th>Ulica</th>
+      <th>Kod pocztowy</th>
+      <th>Nip</th>
+      <th></th>
+      <th></th>
+    </tr>
+    @foreach (var providers in Model)
+      {
+      <tr>
+
+        <td>
+          @providers.Company_Name
+        </td>
+        <td>
+          @providers.CityProv
+        </td>
+        <td>
+          @providers.StreetProv
+        </td>
+        <td class="center">
+          @providers.PostCodeProv
+        </td>
+        <td class="center">
+          @providers.Nip_Prov
+        </td>
+        <td>
+          <a href="/Provider/Edit?symbol=@providers.Id_Providers" class="btn btn-default">
+            Edycja  Sprzedawcy
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          </a>
+        </td>
+      </tr>
+    }
+  </table>
+</section>
