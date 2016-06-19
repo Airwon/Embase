@@ -24,7 +24,7 @@ namespace EmBase.Web.Controllers
 
       var citywithadressquerry = from c in address
                                  join a in locationses on c.Id_City equals a.Id_City
-                                 select new LocationWithCityController
+                                 select new LocationWithCityModel
                                  {
 
 

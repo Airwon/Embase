@@ -13,11 +13,11 @@ namespace EmBase.Web.Controllers
     [HttpGet]
     public ActionResult Index()
     {
-      List<ProviderControler> providers = null;
+      List<ProviderModel> providers = null;
       using (var ctx = new ResourcesServicesContext())
       {
 
-        providers = ctx.Provider.Select(x => new ProviderControler
+        providers = ctx.Provider.Select(x => new ProviderModel
         {
 
           Id_Providers=x.Id_Providers,
