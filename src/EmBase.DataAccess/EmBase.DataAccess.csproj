@@ -51,6 +51,9 @@
   <ItemGroup>
     <Compile Include="Enities\Citys.cs" />
     <Compile Include="Enities\Locations.cs" />
+    <Compile Include="Enities\Model_Equimpments.cs" />
+    <Compile Include="Enities\Permissions.cs" />
+    <Compile Include="Enities\Positions.cs" />
     <Compile Include="Enities\Providers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResourcesServicesContext.cs" />

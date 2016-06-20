@@ -10,10 +10,10 @@ namespace EmBase.Web.Models
 {
     public class LocationWithCityModel
     {
-    [Key]
+  
     [DisplayName("Id_Locations")]
     public int Id_Locations { get; set; }
-    [Key]
+  
     [DisplayName("Id_City ")]
     public int Id_City { get; set; }
 

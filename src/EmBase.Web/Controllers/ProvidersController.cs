@@ -21,6 +21,7 @@ namespace EmBase.Web.Controllers
         {
 
           Id_Providers=x.Id_Providers,
+          CityProv = x.CityProv,
           Company_Name=x.Company_Name,
           StreetProv=x.StreetProv,
           PostCodeProv=x.PostCodeProv,

@@ -8,18 +8,16 @@ using System.Threading.Tasks;
 
 namespace EmBase.Enities
 {
-  public class Citys
+  public class Model_Equimpments
   {
-
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int Id_City { get; set; }
+    public int Id_Model { get; set; }
 
-    public string City { get; set; }
+    public string Mark { get; set; }
 
-    public string Street { get; set; }
+    public string Model { get; set; }
 
-    public string Postal_Code { get; set; }
 
   }
 }

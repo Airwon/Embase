@@ -1,0 +1,46 @@
+﻿@model List<EmBase.Enities.Model_Equimpments>
+@{
+    ViewBag.Title = "Model";
+}
+
+<h2>Model</h2>
+
+<section id="control">
+  <p>
+    <a href="/Model_Equimpment/Add" class="btn btn-default">
+      Dodaj Model
+      <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+    </a>
+  </p>
+
+</section>
+
+<section id="data">
+  <table class="table">
+    <tr>
+      <th>Marka</th>
+      <th>Model</th>
+      <th></th>
+      <th></th>
+    </tr>
+    @foreach (var modele in Model)
+      {
+      <tr>
+
+        <td>
+          @modele.Mark
+        </td>
+        <td>
+          @modele.Model
+        </td>
+
+        <td>
+          <a href="/Model_Equimpment/Edit?symbol=@modele.Id_Model" class="btn btn-default">
+            Edycja  Sprzedawcy
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          </a>
+        </td>
+      </tr>
+    }
+  </table>
+</section>
