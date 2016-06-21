@@ -11,7 +11,7 @@ namespace EmBase.Enities
  public  class Permissions
   {
     [Key]
-    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+
     public int Id_Permission { get; set; }
 
     public string Permission_Name { get; set; }

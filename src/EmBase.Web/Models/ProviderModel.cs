@@ -12,7 +12,7 @@ namespace EmBase.Web.Models
     public class ProviderModel
     {
 
-    
+
     [DisplayName("Id_Providers")]
     public int Id_Providers { get; set; }
 

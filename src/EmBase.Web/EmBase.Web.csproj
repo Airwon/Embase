@@ -126,7 +126,10 @@
     <Compile Include="Controllers\LocationController.cs" />
     <Compile Include="Controllers\LocationsController.cs" />
     <Compile Include="Controllers\Model_EquimpmentsController.cs" />
+    <Compile Include="Controllers\Model_EquimpmentsEditController.cs" />
     <Compile Include="Controllers\PermissionsController.cs" />
+    <Compile Include="Controllers\PermissionsEditController.cs" />
+    <Compile Include="Controllers\PositionEditController.cs" />
     <Compile Include="Controllers\PositionsController.cs" />
     <Compile Include="Controllers\ProviderController.cs" />
     <Compile Include="Controllers\ProvidersController.cs" />
@@ -160,6 +163,12 @@
     <Content Include="Views\Positions\Index.cshtml" />
     <Content Include="Views\Permissions\Index.cshtml" />
     <Content Include="Views\Model_Equimpments\Index.cshtml" />
+    <Content Include="Views\PositionEdit\Add.cshtml" />
+    <Content Include="Views\PositionEdit\Edit.cshtml" />
+    <Content Include="Views\PermissionsEdit\Edit.cshtml" />
+    <Content Include="Views\PermissionsEdit\Add.cshtml" />
+    <Content Include="Views\Model_EquimpmentsEdit\Edit.cshtml" />
+    <Content Include="Views\Model_EquimpmentsEdit\Add.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
